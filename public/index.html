@@ -4,9 +4,31 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ng-news</title>
+  <link rel="stylesheet" href="../bower_components/foundation/css/foundation.min.css"> 
+  <script src="../bower_components/foundation/js/foundation.min.js"></script>
 </head>
-<body ng-app="ngNews">
-  "Hello World"
+<body ng-app="soundTiles">
+
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="#">
+            Sound Tiles
+          </a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="row">
+    <div ng-repeat="tile in tiles" class="tile large-1 columns">
+      <!-- Content of tile -->
+    </div>
+  </div>
+
+  <div class="footer">By Jonathan Reem and Ben Lee</div>
+
   <script src="../bower_components/angular/angular.js"></script>    
   <script src="./client/app.js"></script>    
 </body>
