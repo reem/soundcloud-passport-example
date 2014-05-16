@@ -1,7 +1,7 @@
 {
-  "name": "ng-news",
+  "name": "sound-tiles",
   "version": "0.1.0",
-  "description": "a hacker news clone in angular",
+  "description": "a visual playlist manager for soundcloud",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "hacker",
     "news"
   ],
-  "author": "Jonathan Reem",
+  "author": ["Jonathan Reem", "Ben Lee"],
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.2.0",
