@@ -1,4 +1,4 @@
-/* globals require, __dirname, process */
+/* globals require, __dirname */
 var express = require('express');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
@@ -53,10 +53,6 @@ var ensureAuthenticated = function (req, res, next) {
   }
   res.redirect('/');
 };
-
-app.get('/popular', ensureAuthenticated, function (req, res) {
-
-});
 
 app.get('/player', ensureAuthenticated, function (req, res) {
   res.sendfile('./public/player.html');
