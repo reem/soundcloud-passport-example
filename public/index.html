@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ng-news</title>
-  <link rel="stylesheet" href="../bower_components/foundation/css/foundation.min.css"> 
+  <link rel="stylesheet" href="../bower_components/foundation/css/foundation.min.css">
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
   <script src="../bower_components/foundation/js/foundation.min.js"></script>
 </head>
 <body ng-app="soundTiles">
@@ -20,16 +21,16 @@
       </li>
     </ul>
   </nav>
-  
-  <div class="row">
+
+  <div class="row" ng-controller='tilesController'>
     <div ng-repeat="tile in tiles" class="tile large-1 columns">
-      <!-- Content of tile -->
+      <span>{{ tile.name }}</span>
     </div>
   </div>
 
   <div class="footer">By Jonathan Reem and Ben Lee</div>
 
-  <script src="../bower_components/angular/angular.js"></script>    
-  <script src="./client/app.js"></script>    
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="./client/app.js"></script>
 </body>
 </html>
