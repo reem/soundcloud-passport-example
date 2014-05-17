@@ -8,7 +8,7 @@
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
   <script src="../bower_components/foundation/js/foundation.min.js"></script>
 </head>
-<body ng-app="soundTiles">
+<body style="background-color: #101010;">
 
   <nav class="top-bar" data-topbar>
     <ul class="title-area">
@@ -22,15 +22,12 @@
     </ul>
   </nav>
 
-  <div class="row" ng-controller='tilesController'>
-    <div ng-repeat="tile in tiles" class="tile large-1 columns">
-      <span>{{ tile.name }}</span>
-    </div>
+  <div style="width: 300px; margin: auto; margin-top: 40%;">
+    <a href="auth/soundcloud" style="width: 100%">
+      <img style="width: 300px; margin: 0 auto;" src="http://connect.soundcloud.com/2/btn-connect-sc-l.png"/>
+    </a>
   </div>
 
-  <div class="footer">By Jonathan Reem and Ben Lee</div>
-
-  <script src="../bower_components/angular/angular.js"></script>
-  <script src="./client/app.js"></script>
+  <div class="footer text-center" style="color: white;">By Jonathan Reem and Ben Lee</div>
 </body>
 </html>
